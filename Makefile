@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	qore
-PORTVERSION=	0.8.3
+PORTVERSION=	0.8.4
 CATEGORIES=	lang
 MASTER_SITES=	SF/qore/qore/${PORTVERSION}/
 
@@ -19,6 +19,8 @@ LIB_DEPENDS=	pcre:${PORTSDIR}/devel/pcre \
 		xml2:${PORTSDIR}/textproc/libxml2
 BUILD_DEPENDS=	${LOCALBASE}/bin/flex:${PORTSDIR}/textproc/flex \
 		${LOCALBASE}/bin/bison:${PORTSDIR}/devel/bison
+
+USE_GMAKE=	yes
 
 LDFLAGS+=	-L${LOCALBASE}/lib
 USE_BZIP2=	yes
