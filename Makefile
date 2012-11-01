@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	qore
-PORTVERSION=	0.8.4
+PORTVERSION=	0.8.6
 CATEGORIES=	lang
 MASTER_SITES=	SF/qore/qore/${PORTVERSION}/
 
@@ -16,7 +16,8 @@ COMMENT=	The Qore Programming Language
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	pcre:${PORTSDIR}/devel/pcre \
-		xml2:${PORTSDIR}/textproc/libxml2
+		xml2:${PORTSDIR}/textproc/libxml2 \
+		mpfr:${PORTSDIR}/math/mpfr
 BUILD_DEPENDS=	${LOCALBASE}/bin/flex:${PORTSDIR}/textproc/flex \
 		${LOCALBASE}/bin/bison:${PORTSDIR}/devel/bison
 
