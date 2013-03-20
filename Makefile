@@ -1,7 +1,7 @@
 # $FreeBSD: ports/lang/qore/Makefile,v 1.11 2012/12/10 19:24:02 svnexp Exp $
 
 PORTNAME=	qore
-PORTVERSION=	0.8.6.2
+PORTVERSION=	0.8.7
 PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	SF/qore/qore/${PORTVERSION}/
