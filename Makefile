@@ -1,8 +1,7 @@
-# $FreeBSD: ports/lang/qore/Makefile,v 1.11 2012/12/10 19:24:02 svnexp Exp $
+# $FreeBSD: lang/qore/Makefile 327741 2013-09-20 19:53:09Z bapt $
 
 PORTNAME=	qore
 PORTVERSION=	0.8.7
-PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	SF/qore/qore/${PORTVERSION}/
 
@@ -18,12 +17,10 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/flex:${PORTSDIR}/textproc/flex \
 
 USE_BZIP2=	yes
 USE_GMAKE=	yes
-USE_GNOME=	gnomehack
-USE_ICONV=	yes
+USES=		pathfix iconv
 USE_OPENSSL=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
-MAKE_JOBS_SAFE=	yes
 
 CONFIGURE_ENV=	LEX="${LOCALBASE}/bin/flex" \
 		PTHREAD_LIBS="${PTHREAD_LIBS}" \
@@ -32,11 +29,9 @@ CONFIGURE_ARGS=	--disable-debug --disable-static --with-doxygen=no
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 MAN1=		qore.1
+PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
-# VERSION sub should always be the first three components of
-# PORTVERSION (x.y.z).  Adjust with :R accordingly.
-PLIST_SUB=	VERSION=${PORTVERSION:R}
-
+NO_STAGE=	yes
 .include <bsd.port.pre.mk>
 
 .if ${ARCH} == "powerpc"
