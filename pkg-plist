@@ -73,8 +73,12 @@ include/qore/qore_bitopts.h
 include/qore/qore_thread.h
 include/qore/safe_dslist
 include/qore/support.h
+include/qore/QoreHttpClientObject.h  
+include/qore/QoreSocketObject.h      
+include/qore/qlist
 lib/libqore.la
 lib/libqore.so
-lib/libqore.so.15
+lib/libqore.so.16
 libdata/pkgconfig/qore.pc
 @dirrm include/qore
+
