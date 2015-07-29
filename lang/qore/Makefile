@@ -1,7 +1,7 @@
 # $FreeBSD: head/lang/qore/Makefile 382211 2015-03-25 12:58:33Z marino $
 
 PORTNAME=	qore
-PORTVERSION=	0.8.8
+PORTVERSION=	0.8.11
 PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	SF/qore/qore/${PORTVERSION}/
