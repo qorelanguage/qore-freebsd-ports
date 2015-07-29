@@ -1,9 +1,9 @@
 # qore-freebsd-ports
 FreeBSD Ports configuration
 
-Current List:
+Current List, which mirros the Ports directory tree:
 
-./lang-qore - contains Port files for lang/qore (http://www.freshports.org/lang/qore/)
+./lang/qore - contains Port files for lang/qore (http://www.freshports.org/lang/qore/)
 
 TODO:
 
