@@ -1,0 +1,39 @@
+# $FreeBSD: head/lang/qore/Makefile 382211 2015-03-25 12:58:33Z marino $
+
+PORTNAME=	qore-module-mysql
+PORTVERSION=	2.0.1	
+PORTREVISION=	1
+CATEGORIES=	lang
+MASTER_SITES=	SF/qore/qore/${PORTVERSION}/
+
+MAINTAINER=	estrabd@gmail.com
+COMMENT=	The Mysql client module for the Qore Programming Language
+
+LICENSE=	GPLv2
+
+#LIB_DEPENDS=	libpcre.so:${PORTSDIR}/devel/pcre \
+#		libmpfr.so:${PORTSDIR}/math/mpfr
+#BUILD_DEPENDS=	${LOCALBASE}/bin/flex:${PORTSDIR}/textproc/flex \
+#		${LOCALBASE}/bin/bison:${PORTSDIR}/devel/bison
+#
+#USES=		gmake iconv libtool pathfix tar:bzip2
+#USE_OPENSSL=	yes
+#USE_LDCONFIG=	yes
+#GNU_CONFIGURE=	yes
+#
+#CONFIGURE_ENV=	LEX="${LOCALBASE}/bin/flex" PTHREAD_LIBS="-lpthread"
+#CONFIGURE_ARGS=	--disable-debug --disable-static --with-doxygen=no
+#LDFLAGS+=	-L${LOCALBASE}/lib
+#
+#PLIST_SUB=	PORTVERSION=${PORTVERSION}
+#
+#.include <bsd.port.pre.mk>
+#
+#.if ${ARCH} == "powerpc"
+#BROKEN=		Does not compile on powerpc
+#.endif
+#
+#post-patch:
+#	${REINPLACE_CMD} -e 's|; make|; $${MAKE}|g' ${WRKSRC}/Makefile.in
+#
+#.include <bsd.port.post.mk>
