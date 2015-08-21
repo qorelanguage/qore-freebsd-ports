@@ -2,12 +2,11 @@
 
 PORTNAME=	qore
 PORTVERSION=	0.8.11
-PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	SF/qore/qore/${PORTVERSION}/
 
 MAINTAINER=	estrabd@gmail.com
-COMMENT=	The Qore Programming Language
+COMMENT=	Qore, An embeddable multi-threaded scripting language
 
 LICENSE=	GPLv2
 
