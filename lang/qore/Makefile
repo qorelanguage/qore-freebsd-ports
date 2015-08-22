@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/qore/Makefile 382211 2015-03-25 12:58:33Z marino $
+# $FreeBSD: head/lang/qore/Makefile 395028 2015-08-22 11:25:45Z bofh $
 
 PORTNAME=	qore
 PORTVERSION=	0.8.11
@@ -6,7 +6,7 @@ CATEGORIES=	lang
 MASTER_SITES=	SF/qore/qore/${PORTVERSION}/
 
 MAINTAINER=	estrabd@gmail.com
-COMMENT=	Qore, An embeddable multi-threaded scripting language
+COMMENT=	The Qore Programming Language
 
 LICENSE=	GPLv2
 
@@ -25,6 +25,7 @@ CONFIGURE_ARGS=	--disable-debug --disable-static --with-doxygen=no
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
+INSTALL_TARGET=	install-strip
 
 .include <bsd.port.pre.mk>
 
