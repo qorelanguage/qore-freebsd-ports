@@ -1,0 +1,6 @@
+Qore is a dynamically-typed, embeddabble programming
+language designed for SMP scalability.
+
+This is the module used for accessing MySQL Databases.
+
+WWW: http://www.qore.org/
