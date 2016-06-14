@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/qore/Makefile 395028 2015-08-22 11:25:45Z bofh $
+# $FreeBSD: head/lang/qore/Makefile 413746 2016-04-21 16:43:14Z swills $
 
 PORTNAME=	qore
 PORTVERSION=	0.8.11
@@ -10,10 +10,12 @@ COMMENT=	The Qore Programming Language
 
 LICENSE=	GPLv2
 
-LIB_DEPENDS=	libpcre.so:${PORTSDIR}/devel/pcre \
-		libmpfr.so:${PORTSDIR}/math/mpfr
-BUILD_DEPENDS=	${LOCALBASE}/bin/flex:${PORTSDIR}/textproc/flex \
-		${LOCALBASE}/bin/bison:${PORTSDIR}/devel/bison
+BROKEN_powerpc64=	Does not build
+
+LIB_DEPENDS=	libpcre.so:devel/pcre \
+		libmpfr.so:math/mpfr
+BUILD_DEPENDS=	${LOCALBASE}/bin/flex:textproc/flex \
+		${LOCALBASE}/bin/bison:devel/bison
 
 USES=		gmake iconv libtool pathfix tar:bzip2
 USE_OPENSSL=	yes
