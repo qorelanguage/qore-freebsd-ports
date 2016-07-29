@@ -87,7 +87,7 @@ lib/cmake/Qore/QoreMacros.cmake
 lib/libqore.so
 lib/libqore.so.5
 lib/libqore.so.5.13.0
-lib/pkgconfig/qore.pc
+libdata/pkgconfig/qore.pc
 man/man1/qore.1.gz
 %%DATADIR%%-modules/%%PORTVERSION%%/BulkSqlUtil.qm
 %%DATADIR%%-modules/%%PORTVERSION%%/CsvUtil.qm
